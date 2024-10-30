@@ -12,7 +12,7 @@ app = Flask(__name__)
 app.config.from_object(Config)
 ######## added below section #############
 streamHandler = logging.StreamHandler()
-streamHandler.setLevel(logging.WARNING)
+streamHandler.setLevel(logging.INFO)
 app.logger.addHandler(streamHandler)
 ##########################################
 Session(app)
